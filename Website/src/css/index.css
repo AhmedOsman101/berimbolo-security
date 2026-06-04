@@ -3,276 +3,276 @@
 @tailwind utilities;
 
 * {
-	text-transform: capitalize;
-	scroll-behavior: smooth;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #root {
-	display: grid !important;
-	grid-template-rows: 100px 1fr 100px !important;
-	grid-template-columns: 1fr !important;
-	grid-template-areas:
-		"navbar"
-		"main"
-		"footer" !important;
-	min-height: 100vh !important;
+  display: grid !important;
+  grid-template-rows: 100px 1fr 100px !important;
+  grid-template-columns: 1fr !important;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer" !important;
+  min-height: 100vh !important;
 }
 
 #Navbar {
-	grid-area: navbar !important;
+  grid-area: navbar !important;
 }
 
 #Main {
-	grid-area: main !important;
-	overflow-y: auto !important; /* Allows scrolling if content overflows */
+  grid-area: main !important;
+  overflow-y: auto !important; /* Allows scrolling if content overflows */
 }
 
 #Footer {
-	grid-area: footer !important;
-	display: grid;
-	place-items: center;
-	gap: 0.5rem;
+  grid-area: footer !important;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
 }
 
 @layer components {
-	.Logo:hover svg {
-		@apply text-gray-100;
-	}
+  .Logo:hover svg {
+    @apply text-gray-100;
+  }
 
-	.Logo:hover .navLink {
-		@apply dark:text-blue-400 text-blue-600;
-	}
+  .Logo:hover .navLink {
+    @apply dark:text-blue-400 text-blue-600;
+  }
 
-	.navLink {
-		@apply flex items-center px-4 border-b-2 border-transparent  transition-colors duration-[250ms];
-	}
+  .navLink {
+    @apply flex items-center px-4 border-b-2 border-transparent  transition-colors duration-[250ms];
+  }
 
-	.navLink.active {
-		@apply text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400;
-	}
+  .navLink.active {
+    @apply text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400;
+  }
 
-	.navLink.active:hover {
-		@apply text-blue-500;
-	}
+  .navLink.active:hover {
+    @apply text-blue-500;
+  }
 
-	section p svg:hover {
-		@apply dark:text-blue-400 text-blue-600 transition-colors duration-[250ms];
-	}
+  section p svg:hover {
+    @apply dark:text-blue-400 text-blue-600 transition-colors duration-[250ms];
+  }
 
-	.plan {
-		@apply z-0 border;
-	}
+  .plan {
+    @apply z-0 border;
+  }
 
-	.BasePlan {
-		@apply dark:bg-gray-900 rounded-md flex flex-col items-center p-8 relative cursor-pointer bg-gray-900 w-fit px-14;
-	}
+  .BasePlan {
+    @apply dark:bg-gray-900 rounded-md flex flex-col items-center p-8 relative cursor-pointer bg-gray-900 w-fit px-14;
+  }
 
-	.activePlan {
-		@apply border-2 dark:border-blue-300 scale-100 lg:scale-110 sm:scale-100;
-	}
+  .activePlan {
+    @apply border-2 dark:border-blue-300 scale-100 lg:scale-110 sm:scale-100;
+  }
 
-	.planBtn {
-		@apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase border rounded dark:border-blue-300;
-	}
+  .planBtn {
+    @apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase border rounded dark:border-blue-300;
+  }
 
-	.activePlanBtn {
-		@apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase rounded dark:bg-blue-300 dark:text-gray-900;
-	}
+  .activePlanBtn {
+    @apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase rounded dark:bg-blue-300 dark:text-gray-900;
+  }
 
-	.filter {
-		@apply cursor-pointer px-4 py-1 border dark:border-blue-300;
-	}
+  .filter {
+    @apply cursor-pointer px-4 py-1 border dark:border-blue-300;
+  }
 
-	.activeFilter {
-		@apply cursor-pointer px-4 py-1 font-semibold border  dark:bg-blue-300 dark:border-blue-300 dark:text-gray-900;
-	}
+  .activeFilter {
+    @apply cursor-pointer px-4 py-1 font-semibold border  dark:bg-blue-300 dark:border-blue-300 dark:text-gray-900;
+  }
 
-	.FeatureBtn {
-		@apply relative px-6 py-3 overflow-hidden font-semibold rounded dark:bg-gray-100 dark:text-gray-900 self-start;
-	}
+  .FeatureBtn {
+    @apply relative px-6 py-3 overflow-hidden font-semibold rounded dark:bg-gray-100 dark:text-gray-900 self-start;
+  }
 
-	@media (max-width: 1278px) {
-		.plan,
-		.activePlan {
-			margin-right: 1rem !important;
-			margin-left: 1rem !important;
-			padding-left: 2.5rem;
-			padding-right: 2.5rem;
-		}
-	}
+  @media (max-width: 1278px) {
+    .plan,
+    .activePlan {
+      margin-right: 1rem !important;
+      margin-left: 1rem !important;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
 
-	@media (max-width: 1242px) {
-		#plans {
-			margin-bottom: 1.2rem;
-		}
+  @media (max-width: 1242px) {
+    #plans {
+      margin-bottom: 1.2rem;
+    }
 
-		.Question {
-			font-size: 1rem;
-		}
+    .Question {
+      font-size: 1rem;
+    }
 
-		.PlansHolder {
-			grid-template-areas:
-				"col1 col2"
-				"col3 col3" !important;
-			grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-			grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
-			row-gap: 2rem !important;
-			margin-top: 0 !important;
-		}
+    .PlansHolder {
+      grid-template-areas:
+        "col1 col2"
+        "col3 col3" !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+      row-gap: 2rem !important;
+      margin-top: 0 !important;
+    }
 
-		.BasePlan:nth-child(1) {
-			grid-area: col1 !important;
-		}
-		.BasePlan:nth-child(2) {
-			grid-area: col2 !important;
-		}
-		.BasePlan:nth-child(3) {
-			grid-area: col3 !important;
-		}
+    .BasePlan:nth-child(1) {
+      grid-area: col1 !important;
+    }
+    .BasePlan:nth-child(2) {
+      grid-area: col2 !important;
+    }
+    .BasePlan:nth-child(3) {
+      grid-area: col3 !important;
+    }
 
-		.activePlan {
-			transform: initial !important;
-		}
+    .activePlan {
+      transform: initial !important;
+    }
 
-		.PlansTitle {
-			margin-bottom: 0.5rem !important;
-		}
-	}
+    .PlansTitle {
+      margin-bottom: 0.5rem !important;
+    }
+  }
 
-	@media (max-width: 1131px) {
-		.FeatureImg {
-			border-top-left-radius: 0.375rem !important;
-			border-top-right-radius: 0.375rem !important;
-			border-bottom-left-radius: 0 !important;
-			border-bottom-right-radius: 0 !important;
-			max-width: 100% !important;
-			align-self: normal !important;
-		}
+  @media (max-width: 1131px) {
+    .FeatureImg {
+      border-top-left-radius: 0.375rem !important;
+      border-top-right-radius: 0.375rem !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      max-width: 100% !important;
+      align-self: normal !important;
+    }
 
-		.FeatureBody {
-			border-top-right-radius: 0 !important;
-			border-top-left-radius: 0 !important;
-			border-bottom-left-radius: 0.375rem !important;
-			border-bottom-right-radius: 0.375rem !important;
-		}
-		.FeatureBody h3 {
-			font-size: 1.2rem;
-			font-weight: bold;
-		}
+    .FeatureBody {
+      border-top-right-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0.375rem !important;
+      border-bottom-right-radius: 0.375rem !important;
+    }
+    .FeatureBody h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
 
-		.FeatureHolder,
-		.FeatureBody {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-			flex-direction: column !important;
-			place-items: center !important;
-			place-content: center;
-		}
-	}
-	@media (max-width: 823px) {
-		.PlansHolder {
-			grid-template-areas: unset !important;
-			grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-			grid-template-rows: auto !important;
-		}
-		.BasePlan:nth-child(1) {
-			grid-area: unset !important;
-		}
-		.BasePlan:nth-child(2) {
-			grid-area: unset !important;
-		}
-		.BasePlan:nth-child(3) {
-			grid-area: unset !important;
-		}
-	}
-	@media (max-width: 640px) {
-		.FeatureBody p {
-			line-height: 1.7 !important;
-		}
+    .FeatureHolder,
+    .FeatureBody {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      flex-direction: column !important;
+      place-items: center !important;
+      place-content: center;
+    }
+  }
+  @media (max-width: 823px) {
+    .PlansHolder {
+      grid-template-areas: unset !important;
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+      grid-template-rows: auto !important;
+    }
+    .BasePlan:nth-child(1) {
+      grid-area: unset !important;
+    }
+    .BasePlan:nth-child(2) {
+      grid-area: unset !important;
+    }
+    .BasePlan:nth-child(3) {
+      grid-area: unset !important;
+    }
+  }
+  @media (max-width: 640px) {
+    .FeatureBody p {
+      line-height: 1.7 !important;
+    }
 
-		.FeatureBody p.Y {
-			margin-top: 0.6rem;
-			margin-bottom: 1rem;
-		}
-		.FeatureBody p.T {
-			margin-top: 0.6rem;
-		}
+    .FeatureBody p.Y {
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
+    .FeatureBody p.T {
+      margin-top: 0.6rem;
+    }
 
-		.FeatureBody {
-			width: 90% !important;
-		}
+    .FeatureBody {
+      width: 90% !important;
+    }
 
-		.FeatureBtn {
-			width: 60% !important;
-			align-self: center;
-			text-align: center;
-		}
+    .FeatureBtn {
+      width: 60% !important;
+      align-self: center;
+      text-align: center;
+    }
 
-		#About > section > div > div {
-			display: grid;
-			place-items: start;
-		}
-	}
+    #About > section > div > div {
+      display: grid;
+      place-items: start;
+    }
+  }
 }
 
 body {
-	position: relative;
-	padding-bottom: 110px;
-	/* min-height: 100vh;  */
-	overflow-x: hidden !important;
+  position: relative;
+  padding-bottom: 110px;
+  /* min-height: 100vh;  */
+  overflow-x: hidden !important;
 }
 
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 
 a {
-	text-decoration: inherit;
-	color: inherit;
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .blend-normal {
-	mix-blend-mode: normal;
-	display: block;
+  mix-blend-mode: normal;
+  display: block;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	font-style: italic;
-	background-repeat: no-repeat;
-	background-size: cover;
-	shape-margin: 1rem;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
 }
 
 .FeatureBtn:hover > span {
-	background-color: #06b6d4;
+  background-color: #06b6d4;
 }
 
 .FeatureBtn:hover {
-	background-color: #c7cdd6 !important;
-	transform: scale(1.05);
+  background-color: #c7cdd6 !important;
+  transform: scale(1.05);
 }
 
 #About {
-	overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 
 #About a:hover {
-	background-color: #0e7490;
+  background-color: #0e7490;
 }
 
 #Error a:hover {
-	background-color: #3b82f6;
+  background-color: #3b82f6;
 }
 
 .BasePlan {
-	align-self: normal !important;
+  align-self: normal !important;
 }
 
 .BasePlan,
@@ -282,13 +282,13 @@ img {
 footer *,
 #About a,
 #Error a {
-	transition: all 450ms !important;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition: all 450ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 #Error,
 #Error div {
-	overflow: hidden !important;
-	display: grid !important;
-	place-items: center !important;
+  overflow: hidden !important;
+  display: grid !important;
+  place-items: center !important;
 }

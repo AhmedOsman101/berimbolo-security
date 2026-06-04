@@ -8,9 +8,9 @@ import "aos/dist/aos.css";
 // document.designMode = "on";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	<BrowserRouter basename="berimbolo-security">
-		<React.StrictMode>
-			<App />
-		</React.StrictMode>
-	</BrowserRouter>,
+  <BrowserRouter basename="berimbolo-security">
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>,
 );
