@@ -166,7 +166,7 @@ export default {
     {
       id: 1,
       name: "Comprehensive Security Risk Assessments",
-      image: "https://images.pexels.com/photos/4592239/pexels-photo-4592239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-1.jpg",
       content: [
         "Expert evaluation of potential security vulnerabilities.",
         "Customized risk assessment reports detailing identified threats and recommended solutions.",
@@ -176,7 +176,7 @@ export default {
     {
       id: 2,
       name: "Sale and Installation of Security Systems",
-      image: "https://images.pexels.com/photos/8836072/pexels-photo-8836072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-2.jpg",
       content: [
         "High-quality security systems available for purchase tailored to specific needs.",
         "Professional installation services ensuring optimal functionality and effectiveness.",
@@ -186,7 +186,7 @@ export default {
     {
       id: 3,
       name: "Security System Maintenance",
-      image: "https://images.pexels.com/photos/5589597/pexels-photo-5589597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-3.jpg",
       content: [
         "Regular maintenance plans to ensure the continued reliability and performance of security systems.",
         "Proactive inspections and repairs to address potential issues before they escalate.",
@@ -196,7 +196,7 @@ export default {
     {
       id: 4,
       name: "24/7 Monitoring of Alarm Systems",
-      image: "https://images.pexels.com/photos/9739769/pexels-photo-9739769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-4.jpg",
       content: [
         "Constant monitoring of alarm systems to detect and respond to security breaches promptly.",
         "Real-time alerts sent to designated contacts and emergency services when alarms are triggered.",
@@ -206,7 +206,7 @@ export default {
     {
       id: 5,
       name: "24/7 Monitoring of CCTV Footage",
-      image: "https://images.pexels.com/photos/207574/pexels-photo-207574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-5.jpg",
       content: [
         "Continuous surveillance of CCTV footage to identify suspicious activities or incidents.",
         "Monitoring by trained professionals who can intervene or dispatch authorities as needed.",
@@ -216,7 +216,7 @@ export default {
     {
       id: 6,
       name: "Customized Security Solutions",
-      image: "https://images.pexels.com/photos/10902545/pexels-photo-10902545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-6.jpg",
       content: [
         "Tailored security solutions designed to meet the specific requirements and budget constraints of clients.",
         "Consultative approach involving detailed discussions and site assessments to understand unique needs.",
@@ -226,7 +226,7 @@ export default {
     {
       id: 7,
       name: "Responsive Customer Support",
-      image: "https://images.pexels.com/photos/9942069/pexels-photo-9942069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-7.jpg",
       content: [
         "Dedicated customer support team available round-the-clock to address inquiries and concerns.",
         "Rapid response times for emergency situations or urgent service requests.",
@@ -236,7 +236,7 @@ export default {
     {
       id: 8,
       name: "Compliance and Certification",
-      image: "https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "img-8.jpg",
       content: [
         "Adherence to industry standards and regulations to ensure compliance with legal requirements.",
         "Certification from reputable organizations demonstrating commitment to quality and professionalism.",

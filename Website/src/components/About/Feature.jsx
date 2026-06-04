@@ -1,5 +1,5 @@
- 
- 
+
+
 /* eslint-disable react/prop-types */
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,6 +26,7 @@ const Feature = ({ feature }) => {
           <img
             alt={feature.name}
             src={feature.image}
+            loading="lazy"
             className="FeatureImg md:max-w-[45%] sm:max-w-[90%] dark:bg-gray-500 aspect-video object-cover md:rounded-none sm:rounded-t-md sm:rounded-b-none"
           />
           <div className="flex flex-col p-6 w-full">
